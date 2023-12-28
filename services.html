@@ -1,0 +1,411 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116582981-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116582981-3');
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.dropbtn {
+    
+    padding: 14px;
+    font-size: 14px;
+  
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  function Menu(){
+   sessionStorage.setItem("Click","Menu");
+  }
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+            event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<title></title>
+<link rel="icon" href="images/fev.jpeg" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="WoodFirePizza,Breakfast,Lunch,Dinner,Manali,Food,Delicious"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+<script src="js/jquery.min.js"></script>
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+<!--banner-->
+	<div class="about_banner">
+		<!--header-->
+		<div class="headder">
+			<div class="container">				
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						<div><a class="navbar-brand" href="index.html"> <img src="Pic/logo.png"style="border-radius: 10%" > </a></div>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Home</a></li>
+							  <li><a href="menu.html" onclick="Menu()">Menu</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="services.html" class="active">Services</a></li>
+<!--								<li><a href="typography.html">Gallery</a></li> -->
+								<li><a href="contact.html">Contact</a></li>
+							</ul>	
+						</div>	
+						<div class="clearfix"> </div>
+					</div>	
+				</nav>				
+			</div>	
+		</div>	
+	</div>
+<!--//banner-->
+
+<div style="padding-top:5%"></div>
+
+<div class="testimonial">
+	<div class="container">
+		<h3>What We Offer</h3>
+		<div class="col-md-4">
+			<div class="testi-item">
+				<blockquote class="testi-item_blockquote">
+
+					<small class="testi-meta"><span class="user">Advance Table Bookings</span>
+<!--<!--					  <a class="testi-url" href="http://demolink.org">http://demolink.org</a> -->
+				    </small>				
+				
+					<a href="#">We take Advance Bookings for family and friends get together arrangements. However, terms apply for advance bookings. To know more please contact us at our Contact Details.</a>
+
+					<div class="clearfix"></div>
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="testi-item">
+				<blockquote class="testi-item_blockquote">
+					<small class="testi-meta"><span class="user">Advance Table Bookings</span>
+<!--<!--					  <a class="testi-url" href="http://demolink.org">http://demolink.org</a> -->
+				    </small>				
+				
+					<a href="#">We take Advance Bookings for family and friends get together arrangements. However, terms apply for advance bookings. To know more please contact us at our Contact Details.</a>
+					<div class="clearfix"></div>
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="testi-item">
+				<blockquote class="testi-item_blockquote">
+					<small class="testi-meta"><span class="user">Advance Table Bookings</span>
+<!--<!--					  <a class="testi-url" href="http://demolink.org">http://demolink.org</a> -->
+				    </small>				
+				
+					<a href="#">We take Advance Bookings for family and friends get together arrangements. However, terms apply for advance bookings. To know more please contact us at our Contact Details.</a>
+					<div class="clearfix"></div>
+				</blockquote>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div> 
+</div>
+<br><br><br>
+ <h1><center>GALLERY</center></h1>
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/toi2.jpg" style="width:100%">
+  <div class="text"></b></font></div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/toi3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/bord.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+
+var slideIndex = 1;
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function nextslide() {
+	plusSlides(1);
+	setTimeout(nextslide,3000);
+}
+
+nextslide();
+
+</script>
+
+<!--<div class="about_top">
+	<div class="container">
+		<h1>Our Place</h1> 
+		<div class="col-md-12 box_2">
+  			<img src="images/5.jpg" class="img-responsive" alt=""/>
+	   </div>
+		<!--<div class="col-md-4 box_2">
+  			<img src="images/5.jpg" class="img-responsive" alt=""/>
+	   </div>
+		<div class="col-md-4 box_2">
+  			<img src="images/5.jpg" class="img-responsive" alt=""/>
+	   </div>	 -->   	   
+   	   <!--<div class="col-md-4 box_2">
+  		  <div class="service_grid_1 txt_1">
+  		  	<h4>But I must explain to you</h4>
+  		  	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+  		  </div>
+  		  <div class="service_grid_1">
+  		  	<h4>But I must explain to you</h4>
+  		  	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non providen</p>
+  		  </div>
+	   </div>
+	   <div class="col-md-4 box_2">
+  		  <div class="service_grid_1 txt_1">
+  		  	<h4>But I must explain to you</h4>
+  		  	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+  		  </div>
+  		  <div class="service_grid_1">
+  		  	<h4>But I must explain to you</h4>
+  		  	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non providen</p>
+  		  </div>
+	   </div> -->
+   	   <div class="clearfix"> </div>
+	</div>
+</div>
+
+<div class="about_middle text-center">
+	<div class="container">
+		<h2>Meet The Team</h2>
+<!--		<h3><a href="#">There are many variations of passages</a></h3> -->
+<!--<!--		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages</p> -->
+	</div>
+	<div class="box_3"> </div>
+</div>
+<!--<!--<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+</div> --> 
+<div class="footer">
+	<div class="container">
+	    <div class="col-md-6 col_2">
+		  <ul><li><h5>Location:</h5><p>Taste Of India<span>1.5 km far from Mall Road,</span></p><p>Near Indian Oil Pump, Vashishth Chowk <span>Manali</span></p></li>
+		   <li><h5>Phone &amp; Mail</h5><p>Mobile&#128241;<span>+91 - 9736644322</span></p><p>Email:<br><span><a href="mailto:tasteofindiamanali@gmail.com">tasteofindiamanali@gmail.com</a></span></p></li>
+		  </ul>
+		</div>
+		<div class="col-md-6 col_3">
+		  <div class="col_3">
+		  <ul class="menu">
+            <li><a href="index.html">Home</a></li>| 
+            <li><a href="menu.html" onclick="Menu()">Menu</a></li>|
+            <li><a href="about.html">About</a></li> |
+            <li><a href="services.html">Services</a></li> |
+         
+            <li><a href="contact.html">Contact</a></li>
+		  </ul>
+		 
+		  </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+</p></font><hr><center><h5><u>Copyright© 2018 Taste Of India Manali (Unit of High Adventure). All Rights Reserved.</u></h5>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>		
