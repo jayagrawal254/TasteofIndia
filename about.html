@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116582981-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116582981-3');
+</script>
+
+	<style>
+.dropbtn {
+    
+    padding: 14px;
+    font-size: 14px;
+  
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	function Menu(){
+	 sessionStorage.setItem("Click","Menu");
+	}
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+            event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<title></title>
+<link rel="icon" href="images/fev.jpeg" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="WoodFirePizza,Breakfast,Lunch,Dinner,Manali,Food,Delicious"/>
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+</head>
+<body>
+<!--banner-->
+	<div class="about_banner">
+		<!--header-->
+		<div class="headder">
+			<div class="container">				
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div><a class="navbar-brand" href="index.html"> <img src="Pic/logo.png"style="border-radius: 10%" > </a></div>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="menu.html" onclick="Menu()">Menu</a></li>
+								<li><a href="about.html" class="active">About us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>	
+						</div>	
+						<div class="clearfix"> </div>
+					</div>	
+				</nav>				
+			</div>	
+		</div>	
+	</div>
+<!--//banner-->
+<!--<div class="about_top">
+	<div class="container">
+		<h1>Our Advantages</h1> 
+		<div class="col-md-4 box_7">
+  			<div class="list styled custom-list custom-list1">
+				<ul>
+					<li><span class="dropcap">1.</span>  
+					   <div class="item_content">
+						<h5><a href="#">nunc nobis videntur parum</a></h5> 
+						<p> anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur paru.</p>
+						<p class="m_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+					   </div>
+					</li>
+			    </ul>
+			</div>
+	   </div>
+   	   <div class="col-md-4 box_7">
+  			<div class="list styled custom-list custom-list1">
+				<ul>
+					<li><span class="dropcap">2.</span>  
+					   <div class="item_content">
+						<h5><a href="#">nunc nobis videntur parum</a></h5> 
+						<p> anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur.</p>
+						<p class="m_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+					   </div>
+					</li>
+			    </ul>
+			</div>
+	   </div>
+   	   <div class="col-md-12 box_7">
+  			<div class="list styled custom-list custom-list1">
+				<ul>
+					<li><span class="dropcap">3.</span>  
+					   <div class="item_content">
+						<h5><a href="#">nunc nobis videntur parum</a></h5> 
+						<p> Flowing Smoke, Pebble Like Smooth Spheres, Bollywood Theatrics And Culinary Illusion Are A Few Aspects Which Describe Taste Of India Restaurant Experience. To Learn More About Us, Please Click On The Aforesaid "About Us" Link..</p>
+						<p class="m_1">Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+					   </div>
+					</li>
+			    </ul>
+			</div>
+	   </div>
+   	   <div class="clearfix"> </div>
+	</div>
+</div> -->
+
+<div style="padding-top:5%"></div>
+
+<div class="testimonial">
+	<div class="container">
+		<h3><u>Taste of India Manali</u></h3>
+		
+		<h2 style="color:#FFFFFF">Creating an unparalleled culinary experience-</h2>
+		<!--<div class="col-md-4">
+			<div class="testi-item">
+				<blockquote class="testi-item_blockquote">
+					<a href="#">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look</a>
+					<small class="testi-meta"><span class="user">Many desktop</span>
+					  <a class="testi-url" href="http://demolink.org">http://demolink.org</a>
+				    </small>
+					<div class="clearfix"></div>
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="testi-item">
+				<blockquote class="testi-item_blockquote">
+					<a href="#">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look</a>
+					<small class="testi-meta"><span class="user">Many desktop</span>
+					  <a class="testi-url" href="http://demolink.org">http://demolink.org</a>
+				    </small>
+					<div class="clearfix"></div>
+				</blockquote>
+			</div>
+		</div> -->
+		<div class="col-md-12">
+			<div class="testi-item">
+				
+					It is a quirky, chic, modern Indian restaurant in manali, where guests enjoy a sensory experience through the finest, Modern Indian and Global cuisines, with a high energy ambiance. We serve best food in manali, infusing delights of the Bollywood tadka. On the top we present Indian, Italian & Chinese range of cuisines. Where culinary art meets the alchemy of modern presentations and cooking techniques. Pizza delivery in manali, it’s the best restaurant near mall road manali, wood fire pizzas, food joints in manali and many more. Flowing smoke, pebble like smooth spheres, Bollywood theatrics and culinary illusion are a few aspects which describe Taste of India Restaurant experience. Famous restaurants in manali, Elements of traditional & modern day cooking techniques, customized equipment’s and ambience theatrics transform flavors for a unique, high energy, modernist and genre defining dining experience.
+					Indian restaurant near me home, delivery services and best cafes in manali town. </a>
+					<small class="testi-meta"><span class="user">A Unit of High Adventure Tour Group</span>
+						<font color=white><h5><u>Checkout our other link for Exploring Manali</u></h5></font>
+					  <a class="testi-url" href="http://www.highadventuretour.com.org">http://www.highadventuretour.com</a>
+					  <a class="testi-url" href="http://www.activitymanali.com">http://www.activitymanali.com</a>
+				    </small>
+					<div class="clearfix"></div>
+				</blockquote>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div> 
+</div>
+
+
+<!--<div class="about_middle text-center">
+	<div class="container">
+		<h2>Meet The Team</h2>
+<!--		<h3><a href="#">There are many variations of passages</a></h3> -->
+<!--		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages</p> -->
+		<!--<div class="box_1"> </div>
+	</div>
+</div> -->
+<!--<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+</div>
+ -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="footer">
+	<div class="container">
+	    <div class="col-md-6 col_2">
+		  <ul><li><h5>Location:</h5><p>Taste Of India<span>1.5 km far from Mall Road,</span></p><p>Near Indian Oil Pump, Vashishth Chowk <span>Manali</span></p></li>
+		   <li><h5>Phone &amp; E-mail:</h5><p>Mobile&#128241;<span>+91 - 9736644322</span></p><p>Email:<br><span><a href="mailto:tasteofindiamanali@gmail.com">tasteofindiamanali@gmail.com</a></span></p></li>
+		  </ul>
+		</div>
+		<div class="col-md-6 col_3">
+		  <div class="col_3">
+		  <ul class="menu">
+            <li><a href="index.html">Home</a></li>| 
+            <li><a href="menu.html" onclick="Menu()">Menu</a></li>|
+            <li><a href="about.html">About</a></li> |
+            <li><a href="services.html">Services</a></li> |
+         
+            <li><a href="contact.html">Contact</a></li>
+		  </ul>
+		 
+		  </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+</p></font><hr><center><h5><u>Copyright© 2018 Taste Of India Manali (Unit of High Adventure). All Rights Reserved.</u></h5>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+</body>
+</html>		

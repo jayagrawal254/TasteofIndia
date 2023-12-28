@@ -1,0 +1,721 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116582981-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116582981-3');
+    </script>
+
+    <style>
+        .bodystyle {
+            background-image: url("Pic/back.jpg");
+            background-attachment: fixed;
+
+        }
+
+        .color {
+            color: red;
+        }
+
+        .headings {
+            padding-bottom: 35px;
+            padding-top: 35px;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .centerAligned {
+            text-align: center;
+        }
+
+        .dropbtn {
+
+            padding: 14px;
+            font-size: 14px;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .bar1change {
+            transform: rotate(-45deg) translate(-5px, 6px) scale(1.2);
+            transition: 0.4s;
+        }
+
+        .bar2change {
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .bar3change {
+            transform: rotate(45deg) translate(-2px, -4px) scale(1.2);
+            transition: 0.4s;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        sessionStorage.setItem("contactformdrop", 0);
+
+        function contactForm() {
+            window.location.href = "contact.html";
+            sessionStorage.setItem("contactformdrop", 1);
+        }
+
+        function Menu() {
+            sessionStorage.setItem("Click", "Menu");
+        }
+
+        $(document).ready(function () {
+
+
+            $("#barcombo").click(function () {
+                $("#bar1").toggleClass("bar1change");
+                $("#bar2").toggleClass("bar2change");
+                $("#bar3").toggleClass("bar3change");
+            });
+
+
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            if (sessionStorage.getItem("Click") == "Menu") {
+                $('html, body').animate({
+                    scrollTop: $("#Menu").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "TandooriSnacks") {
+                $('html, body').animate({
+                    scrollTop: $("#TandooriSnacks").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "Indian") {
+                $('html, body').animate({
+                    scrollTop: $("#Indian").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "Chinese") {
+                $('html, body').animate({
+                    scrollTop: $("#Chinese").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "SouthIndian") {
+                $('html, body').animate({
+                    scrollTop: $("#SouthIndian").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "Italian") {
+                $('html, body').animate({
+                    scrollTop: $("#Italian").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "Continental") {
+                $('html, body').animate({
+                    scrollTop: $("#Continental").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "Bakery") {
+                $('html, body').animate({
+                    scrollTop: $("#Bakery").offset().top
+                }, 500);
+            }
+
+            if (sessionStorage.getItem("Click") == "WoodFirePizza") {
+                $('html, body').animate({
+                    scrollTop: $("#WoodFirePizza").offset().top
+                }, 500);
+            }
+
+        });
+    </script>
+    <link rel="icon" href="images/fev.jpeg" type="image/png">
+    <title> Taste Of India Manali | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Pizza,Woodfirepizza,Food,Dinner"/>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all"> <!--footer icons css-->
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+</head>
+<body class="bodystyle">
+<!--banner-->
+<div class="centerAligned" id="Menu"><a href="index.html"> <img src="Pic/logo.png" style="border-radius: 10%"> </a>
+</div>
+<div class="centerAligned"><BR><img id="TandooriSnacks" src="images/menu.jpg" height="90" width="100">
+</div>
+
+</div>
+<br>
+<div class="col-sm-12">
+    <h2 class="headings color">− BREAKFAST −</h2>
+    <div class="col-sm-6 centerAligned">
+        <h3><u>TANDOORI PARANTHAS</u></h3>
+        <h4>ALOO PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>ONION PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>GOBHI PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>PANEER PARANTHA - <span class="color">140₹</span></h4>
+
+        <h4>MOOLI PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>MIX PARANTHA - <span class="color">120₹</span></h4>
+
+    </div>
+
+    <div class="col-sm-6 centerAligned">
+        <h3>
+            <u>
+                TAWA PARANTHAS <br>(FRY OR DRY)
+            </u>
+        </h3>
+        <h4>ALOO PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>ONION PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>GOBHI PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>PANEER PARANTHA - <span class="color">140₹</span></h4>
+
+        <h4>MOOLI PARANTHA - <span class="color">120₹</span></h4>
+
+        <h4>MIX PARANTHA - <span class="color">120₹</span></h4>
+
+    </div>
+</div>
+
+<div class="col-sm-12">
+
+    <h2 class="headings color" id="Indian">− ALA-CARTE −</h2>
+    <div class="col-sm-6 centerAligned">
+
+        <h3><u>Specialties</u></h3>
+        <h4>Veg Cole Slaw Sandwich - <span class="color">150₹</span></h4>
+
+        <h4>Sliced Vegetable Sandwich - <span class="color">140₹</span></h4>
+
+        <h4>Chicken Vole Slaw Sandwich - <span class="color">250₹</span></h4>
+
+        <h4>Cheese & Tomato Grilled Sandwich - <span class="color">270₹</span></h4>
+
+        <h4>Cheese & Cheese Grilled Sandwich - <span class="color">270₹</span></h4>
+
+        <h4>Paneer Pakora - <span class="color">250₹</span></h4>
+
+        <h4>Veg. Cutlets - <span class="color">300₹</span></h4>
+
+        <h4>Cheese Cutlets - <span class="color">300₹</span></h4>
+        <h4>Chicken Cutlets - <span class="color">300₹</span></h4>
+        <h4>French Fries - <span class="color">300₹</span></h4>
+        <h4>Toast (2pcs) - <span class="color">300₹</span></h4>
+        <h4>Butter - <span class="color">300₹</span></h4>
+        <h4>Curd - <span class="color">300₹</span></h4>
+
+    </div>
+    <div class="col-sm-6 centerAligned">
+        <h3><u>Kathi Rolls</u></h3>
+        <h4>Egg Kathi Roll - <span class="color"> 250₹</span></h4>
+        <h4 class="color"></h4>
+        <h4>Paneer Kathi Roll - <span class="color">250₹</span></h4>
+        <h4 class="color"></h4>
+        <h4>Chicken Kathi Roll - <span class="color">250₹</span></h4>
+        <h4 class="color"></h4>
+        <h4>Potato Kathi Roll - <span class="color">300₹</span></h4>
+
+    </div>
+</div>
+
+
+<div class="col-sm-12 centerAligned">
+    <h2 class="headings color" id="Chinese">− HOT POT −</h2>
+    <h3><u>Indian Specialities</u></h3>
+    <h4>Chana Bhatura (2 Pcs.) - <span class="color">250.00/370.00₹</span></h4>
+
+    <h4>Poori Bhaji (2 Pcs.) - <span class="color">300.00₹</span></h4>
+
+    <h3><u>Eggs to Order</u></h3>
+    <h4>Boiled Egg (2 Eggs.) - <span class="color">250.00₹</span></h4>
+
+    <h4>Scrambled Egg (2 Eggs.) - <span class="color">300.00₹</span></h4>
+
+    <h4>Omelette (2 Eggs) - <span class="color">200.00/250.00₹</span></h4>
+
+
+    <h4>Half Fried (2 Eggs) - <span class="color">200.00/250.00₹</span></h4>
+
+
+    <h4>Cereals - <span class="color">350.00₹</span></h4>
+
+    <h4>Cornflakes (Hot Milk/Cold Milk ) - <span class="color">250.00₹</span></h4>
+
+    <h3><u>The Steaming Pot</u></h3>
+    <h4>Tea - <span class="color">450.00₹</span></h4>
+
+    <h4>Espresso Coffee (Pure black coffee) - <span class="color">250.00/300.00₹</span></h4>
+    <h4>Cappuccino - <span class="color">450.00₹</span></h4>
+
+    <h4>Hot Chocolate/Bournvita - <span class="color">250.00/300.00₹</span></h4>
+    <h4>Milk (Hot & Cold) - <span class="color">250.00/300.00₹</span></h4>
+    <h3><u>Think Cool</u></h3>
+    <h4>Aerated Water - <span class="color">450.00₹</span></h4>
+
+    <h4>Cold Coffee - <span class="color">250.00/300.00₹</span></h4>
+    <h4>Lassi (Sweet, Salted) - <span class="color">450.00₹</span></h4>
+
+    <h4>Choice of Thick Shakes - <span class="color">250.00/300.00₹</span></h4>
+    <p>(Vaniilla, Strawberry, Chocolate, Pineapple, Mango & Banana)</p>
+    <h4>Cold Drink - <span class="color">250.00/300.00₹</span></h4>
+    <p>(Coke/Pepsi/Fanta/Mirinda/Due)</p>
+
+</div>
+
+<div class="col-sm-12 centerAligned">
+    <h2 class="headings color" id="SouthIndian">− SHAKAHARI HANDI −</h2>
+    <h3 class="color">Vegetarian Curries</h3>
+
+
+    <div class="col-sm-6 centerAligned">
+        <h3><u>Paneeer Specialities</u></h3>
+        <h4>Mattar Paneer - <span class="color">120₹</span></h4>
+
+        <h4>Palak Paneer - <span class="color">120₹</span></h4>
+
+        <h4>Paneer Do Pyaza - <span class="color">120₹</span></h4>
+
+        <h4>Kadahi Paneer - <span class="color">140₹</span></h4>
+
+        <h4>Shahi Paneer - <span class="color">120₹</span></h4>
+
+        <h4>Cheese Tomato - <span class="color">120₹</span></h4>
+        <h4>Paneer Butter Masala - <span class="color">120₹</span></h4>
+        <h4>Malai Kofta - <span class="color">120₹</span></h4>
+        <h4>Kashmiri Dum Aloo - <span class="color">120₹</span></h4>
+        <h4>Punjabi Paneer Bhurjee - <span class="color">120₹</span></h4>
+        <h4>Paneer Lababdar - <span class="color">120₹</span></h4>
+
+    </div>
+
+    <div class="col-sm-6 centerAligned">
+        <h3>
+            <u>
+                Vegetables
+            </u>
+        </h3>
+        <h4>Jeera Aloo - <span class="color">120₹</span></h4>
+
+        <h4>Aloo Matter - <span class="color">120₹</span></h4>
+
+        <h4>Mix Veg. - <span class="color">120₹</span></h4>
+
+        <h4>Palak Mushrooms - <span class="color">140₹</span></h4>
+
+        <h4>Palak Kofta - <span class="color">120₹</span></h4>
+
+        <h4>Kadhi Pakoda - <span class="color">120₹</span></h4>
+        <h4>Rajasthani Gatta Kadhi - <span class="color">120₹</span></h4>
+        <h4>Mushroom Do Pyaza - <span class="color">120₹</span></h4>
+        <h4>Matter Mushroom Kadhi - <span class="color">120₹</span></h4>
+        <h4>Kadahi Mushroom - <span class="color">120₹</span></h4>
+        <h4>Methi Malai Matter - <span class="color">120₹</span></h4>
+        <h4>Shahi Soya Chaap - <span class="color">120₹</span></h4>
+
+        <h4>Kadhai Soya Chaap - <span class="color">120₹</span></h4>
+        <h4>Soya Bhurjee - <span class="color">120₹</span></h4>
+        <h4>Tawa Soya Chaap - <span class="color">120₹</span></h4>
+        <h4>Tawa Mushroom - <span class="color">120₹</span></h4>
+        <h4>Soya Roganjosh - <span class="color">120₹</span></h4>
+
+    </div>
+
+    <div class="col-sm-4 centerAligned">
+        <h3>
+            <u>
+                Dal Specialities
+            </u>
+        </h3>
+        <h4>Dal Fry - <span class="color">120₹</span></h4>
+
+        <h4>Arhar Dal Tadka - <span class="color">120₹</span></h4>
+
+        <h4>Moong Dal Tadka - <span class="color">120₹</span></h4>
+
+        <h4>Dal Makhani - <span class="color">140₹</span></h4>
+
+        <h4>Rajma Masala - <span class="color">120₹</span></h4>
+
+        <h4>Chana Masala Dry - <span class="color">120₹</span></h4>
+        <h4>Amritsari Chholey - <span class="color">120₹</span></h4>
+
+    </div>
+    <div class="col-sm-4 centerAligned">
+        <h3>
+            <u>
+                Seasonal Vegetables
+            </u>
+        </h3>
+        <h4>Sarson Ka Saag - <span class="color">120₹</span></h4>
+
+        <h4>Aloo Gobhi Matter - <span class="color">120₹</span></h4>
+
+        <h4>Gajar Matter - <span class="color">120₹</span></h4>
+
+    </div>
+
+    <div class="col-sm-4 centerAligned">
+        <h3>
+            <u>
+                Tandoori Breads
+            </u>
+        </h3>
+        <h4>Plain Roti - <span class="color">120₹</span></h4>
+
+        <h4>Butter Roti - <span class="color">120₹</span></h4>
+
+        <h4>Lachhedar Parantha - <span class="color">120₹</span></h4>
+        <h4>Pudina Paratha - <span class="color">120₹</span></h4>
+        <h4>Missi Roti - <span class="color">120₹</span></h4>
+        <h4>Makki Ki Roti (Seasonal) - <span class="color">120₹</span></h4>
+        <h4>Hari Mirch Parantha - <span class="color">120₹</span></h4>
+        <h4>Plain Naan - <span class="color">120₹</span></h4>
+        <h4>Butter Naan - <span class="color">120₹</span></h4>
+        <h4>Garlic Naan - <span class="color">120₹</span></h4>
+        <h4>Amritsari Kulcha - <span class="color">120₹</span></h4>
+        <h4>Stuffed Naan - <span class="color">120₹</span></h4>
+        <h4>Paneer Naan - <span class="color">120₹</span></h4>
+        <h4>Roomali Roti - <span class="color">120₹</span></h4>
+    </div>
+
+</div>
+
+<div class="col-sm-12 centerAligned">
+    <h2 class="headings color" id="Italian">− TANDOOR KI AANCH −</h2>
+    <h3>Non Vegetarian Tandoori Snacks</h3>
+
+    <h4>Tandoori Chicken - <span class="color">350.00₹</span></h4>
+    <p>(The Kind of Kebabs, succulent spring chicken marinated in yogurt & a plethora of spices, skewered & charcoal grilled)</p>
+    <h4>Chicken Afgani - <span class="color">350.00₹</span></h4>
+    <p>(a creamy kebab chicken marinated with cream, cheese and aromatic herbs)</p>
+
+    <h4>Chicken Bharwaan Tangri Kebab (4pcs) - <span class="color">400.00₹</span></h4>
+    <p>(Drumsticks stuffed with minced chicken & dry fruits, marinated
+        in select spices and finished in clay oven)</p>
+    <h4>Chicken Tikka Chatpatta - <span class="color">400.00₹</span></h4>
+    <p>(Chunk of chicken marinated in yogurt and plethora of spices skewered and grilled)</p>
+    <h4>Chicken Gilafi Kebaba - <span class="color">450.00₹</span></h4>
+    <p>(Minced chicken-marinated with aromatic herbs & spices, coated with Chopped onions and capsicum, skewered and grilled)</p>
+    <h4>Chicken Malai Kebab - <span class="color">500.00₹</span></h4>
+    <h4>Gosht Seekh Kebab - <span class="color">500.00₹</span></h4>
+    <p>(Minced lamb marinated with aromatic herbs & spices skewered & grilled in clay oven)</p>
+    <h4>Non-Veg Platter - <span class="color">500.00₹</span></h4>
+    <h4>Tandoori Trout Fish with Salads - <span class="color">500.00₹</span></h4>
+</div>
+
+<div class="col-sm-12 centerAligned">
+    <h3><u>Vegetarian Tandoori Snacks</u></h3>
+    <h4>Paneer Bhuna Kebab/Khumbh Bhunna Kebab - <span class="color">250.00/370.00₹</span></h4>
+    <p>(Cottage cheese cubes/Button Mushrooms marinated in yogurt & exotic
+        Indian spices, finished in clay oven)</p>
+
+    <h4>Paneer Sabz Seekh - <span class="color">300.00₹</span></h4>
+    <p>(An exotic combination of cottage cheese & fresh seasonal vegetables on skewer baked in Tandoor)</p>
+
+    <h4>Paneer Tikka - <span class="color">300.00₹</span></h4>
+    <h4>Mushroom Tikka - <span class="color">300.00₹</span></h4>
+    <h4>Paneer Malai Tikka - <span class="color">300.00₹</span></h4>
+    <h4>Veg Platter - <span class="color">300.00₹</span></h4>
+</div>
+
+
+<!--Menu Block-->
+<div class="col-sm-12 centerAligned">
+    <h2 class="headings color" id="Continental">− HANDI-E-KHAAS −</h2>
+    <h3>Non Vegetarian Curries</h3>
+    <h4>Mutton Rara - <span class="color">450.00₹</span></h4>
+    <p>(Mutton chunks cooked in spicy gravy of minced mutton)</p>
+    <h4>Butter Chicken - <span class="color">450.00₹</span></h4>
+    <p>(Farm fresh chicken morsel slimmered in rich tomato gravy & finished
+        with cream & butter)</p>
+    <h4>Chicken Saagwala - <span class="color">450.00₹</span></h4>
+    <p>(Farm Fresh chicken cooked with green saag & other spices)</p>
+    <h4>Mutton Saag - <span class="color">550.00₹</span></h4>
+    <p>(Mutton cooked with green saag)</p>
+    <h4>Awadh-E-Khaas Murgh Kalimirch - <span class="color">475.00₹</span></h4>
+    <p>(Chicken morsel simmered in special awadhi gravy with abundance
+        of freshly ground black papper)</p>
+    <h4>Murgh-E-Khaas Kadhi - <span class="color">475.00₹</span></h4>
+    <p>(Farm fresh chicken cooked in onion, tomatoes and capsicum based gravy with
+        freshly ground spices ,tempered with corriander seeds and whole red chillies)</p>
+    <h4>Mutton Rogan-Josh - <span class="color">475.00₹</span></h4>
+    <p>(Tender pieces of lamb simmered in typical spicy gravy with authentic
+        Indian whole spices)</p>
+    <h4>Cream Chicken - <span class="color">475.00₹</span></h4>
+    <p>(Farm fresh chicken simmered in rich & smooth white gravy and finished with cream)</p>
+    <h4>Chicken Curry - <span class="color">475.00₹</span></h4>
+    <p>(Chicken cooked in traditional red curry flavored with grounded spices)</p>
+    <h4>Murg Malai Methi - <span class="color">475.00₹</span></h4>
+    <p>(Chicken prepared with fresh cream & fenugreek)</p>
+    <h4>Keema Mutton Minced - <span class="color">475.00₹</span></h4>
+    <p>(Minced mutton flavoured with grounded indian spices cooked with green peas)</p>
+    <h4>Egg Curry - <span class="color">475.00₹</span></h4>
+    <p>(Egg in red gravy sauce, finished with finely chopped corriander leaves)</p>
+</div>
+
+<div class="col-sm-12 centerAligned">
+    <h2 class="headings color" id="Bakery">− BASMATI KI BAHAAR −</h2>
+
+    <h4>Pulao (Sabz/Mattar/Jeera) - <span class="color">55/350.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Steamed Rice - <span class="color">55/370.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Mutton Biryani - <span class="color">55/380.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Chicken Biryani - <span class="color">60/400.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Egg Biryani - <span class="color">60/450.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Veg. Friend Rice - <span class="color">70/470.00₹</span></h4>
+    <h4 class="color"></h4>
+
+
+    <h3><U><b>Pastries/cake (1-Pond)</b></U></h3>
+    <h4>Hara Bhara Salad - <span class="color">55/350.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Kachumber Salad - <span class="color">55/370.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Russian Salad - <span class="color">55/380.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Raita (Mix Veg. Boondi) - <span class="color">60/400.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Raita Pineapple - <span class="color">60/450.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Papad Roasted or Fried - <span class="color">70/470.00₹</span></h4>
+    <h4 class="color"></h4>
+</div>
+
+<div class="col-sm-12 centerAligned">
+    <h2 class="headings color" id="WoodFirePizza">− Kuch Meetha Ho Jaye −</h2>
+    <h3 class="color">(Deserts)</h3>
+    <h4>Kesar Kheer - <span class="color">300.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Gulab Jamun (2pcs) - <span class="color">325.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Kesar Jalebi - <span class="color">350.00₹</span></h4>
+    <h4 class="color"></h4>
+    <h4>Ice Cream (2 scoop) - <span class="color">400.00₹</span></h4>
+    <h4 class="color"></h4>
+
+</div>
+
+<div class="clearfix"></div>
+<center>&nbsp And Many More- <b></b><br>
+    Download Full Menu Here<br>             <a href="https://link.zomato.com/xqzv/rshare?id=6275140630563460" target="_blank" style="color: white; padding: .75rem 2.5rem; border: none; cursor: pointer; font-weight: bold; font-size: 1.2rem; background: linear-gradient(to right, #FF416C, #FF4B2B); border-radius: 10px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Order Now</a>
+
+    <a href="pdf\toi.pdf" target="_blank"><font face="Comic Sans MS" color="red"><img src="images\dow.gif" height="170"
+                                                                                      width="200"></font></a>   </center>
+
+
+
+
+</div>
+</div>
+
+
+<div class="testimonial">
+    <div class="container">
+        <h3>Want to know us More..</h3>
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">About Us</font></u></b>
+                    <small class="testi-meta"><span class="user">Flowing smoke, pebble like smooth spheres, Bollywood theatrics and culinary illusion are a few aspects which describe Taste of India Restaurant experience.</span>
+
+                    </small>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">Services</font></u></b>
+                    <small class="testi-meta"><span class="user">It is a quirky, chic, modern Indian restaurant, where guests enjoy a sensory experience through the finest, Modern Indian and Global cuisines, with a high energy ambiance. To learn more on Services, please click on the aforesaid "Services" link..</span>
+
+                    </small>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">Contact Us</font></u></b>
+                    <small class="testi-meta"><span class="user">We're located in the beautiful valley of Manali, Himachal Pradesh. You may catch us on Google Map for our location. Else, click on the aforesaid "Contact Us" link to get our location, Customer Care Phone Numbers and Email Contacts..</span>
+
+                    </small>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">Social Presence</font></u></b>
+                    <br></br>
+                    <a href="https://www.facebook.com/yourtasteofindia/" style="color:#FFFFFF;">
+                        <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                        <!-- Add font awesome icons -->
+                        <a href="https://www.facebook.com/yourtasteofindia/" class="fa fa-facebook"
+                           style="font-size: 18px;"></a>
+
+                        <br>
+
+                        <a href="mailto:tasteofindiamanali@gmail.com" style="color:#FFFFFF;">
+                            <i id="social-em" class="fa fa-envelope-square fa-2x social style=" scale:2"></i></a>
+            </div>
+
+            </span>
+
+            </small>
+            <div class="clearfix"></div>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="col-md-6 col_2">
+            <ul>
+                <li><h5>Location:</h5>
+                    <p>Taste Of India<span> 1.5 km far from Mall Road,</span></p>
+                    <p>Near Indian Oil Pump, Vashishth Chowk <span>Manali</span></p></li>
+                <li><h5>Phone &amp; Mail</h5>
+                    <p>Mobile&#128241;<span>+91 - 9736644322</span></p>
+                    <p>Email:<br><span><a
+                            href="mailto:tasteofindiamanali@gmail.com">tasteofindiamanali@gmail.com</a></span></p></li>
+            </ul>
+            </ul>
+        </div>
+        <div class="col-md-6 col_3">
+            <div class="col_3">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    |
+                    <li><a href="menu.html" onclick="Menu()">Menu</a></li>
+                    |
+                    <li><a href="about.html">About</a></li>
+                    |
+                    <li><a href="services.html">Services</a></li>
+                    |
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+</p></font>
+<hr>
+<center><h5><u>Copyright© 2018 Taste Of India Manali (Unit of High Adventure). All Rights Reserved.</u></h5>
+    <script src="js/bootstrap.min.js"></script>
+    <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            0
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!------ Eng Light Box ------>
+    <!-- Prettify -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo3").owlCarousel({
+                items: 6,
+                lazyLoad: true,
+                autoPlay: true,
+                navigation: false,
+                pagination: false,
+            });
+        });
+    </script>
+</body>
+</html>		

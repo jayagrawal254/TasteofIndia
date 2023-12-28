@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116582981-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116582981-3');
+</script>
+
+	<style>
+.dropbtn {
+    padding: 14px;
+    font-size: 14px;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: transparent;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		
+	</script>
+<script>
+function Menu(){
+ sessionStorage.setItem("Click","Menu");
+}
+$(document).ready(function(){
+
+	var contactformdrop = parseInt(sessionStorage.getItem("contactformdrop"));
+	console.log(contactformdrop);
+
+
+//   $("a").on('click', function(event) {
+//     if (this.hash !== "") {
+//             event.preventDefault();
+//       var hash = this.hash;
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 800, function(){
+//         window.location.hash = hash;
+//       });
+//     }
+//   });
+
+function abc(){
+	$('html, body').animate({
+	    scrollTop: $("#contactheading").offset().top
+		}, 100);	
+		// sessionStorage.setItem("contactformdrop",0)
+}
+
+if (contactformdrop==1) {
+	setTimeout(function() { abc(); }, 7);
+	}
+});
+</script>
+<link rel="icon" href="images/fev.jpeg" type="image/png">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="WoodFirePizza,Breakfast,Lunch,Dinner,Manali,Food,Delicious" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+</head>
+<body>
+<!--banner-->
+	<div class="about_banner">
+		<!--header-->
+		<div class="headder">
+			<div class="container">				
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div><a class="navbar-brand" href="index.html"> <img src="Pic/logo.png"style="border-radius: 10%" alt="HOME"> </a></div>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="menu.html" onclick="Menu()">Menu</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html" class="active">Contact</a></li>
+							</ul>	
+						</div>	
+						<div class="clearfix"> </div>
+					</div>	
+				</nav>				
+			</div>	
+		</div>	
+	</div>
+<!--//banner-->
+<div class="about_top">
+	<div class="container">
+	   <div class="contact-form">
+				<div class="col-md-6 contact-grid">
+					<h3 id="contactheading">Contact Form</h3>
+					<!--<form style="margin-top:-3%">-->
+						<form action="mailto:tasteofindiamanali@gmail.com " method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="Name- "><br>
+E-mail:<br>
+<input type="text" name="Mail- "><br>
+Your Request:<br>
+<input type="text" name="Your Request- " size="80"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 contact-in">
+					<h3>Contact Information</h3>
+					<p class="sed-para"> Taste Of India Restaurant is located besides one of the most famous destination in Manali - Vashishth Kund.</p>
+					<p class="para1"></p>
+										<p class="sed-para"></p>
+					<p class="sed-para"> Address Details</p>					
+							<p>Taste Of India,</p>
+							<p>1.5 km far from Mall Road on Rohtang Road,</p>
+							<p>Near Indian Oil Pump besides Vashishth Chowk,</p>							
+							<p>Manali, Himachal Pradesh. </p>
+					<p class="sed-para"></p>
+										<p class="sed-para"></p>
+					<p class="sed-para"> Phone & Email Details</p>					
+							<p>Mobile : +91 - 9736644322</p>
+						<p>
+
+<a href="mailto:tasteofindiamanali@gmail.com"><font color="red"><u>Send Mail-</u></font>
+	tasteofindiamanali@gmail.com 
+</a>
+</p>
+							
+					
+	<!--				<div class="more-address"> 
+						<div class="address-more">
+							<p>Taste Of India,</p>
+							<p>Besides Vashishth Kund,</p>
+							<p>Manali, Himachal Pradesh. </p>
+						</div>
+						<div class="address-left">
+							<p>Mobile : +91 - 8351914100</p>
+							<p>Tel : 190-</p>
+							<p><a href="malito:mail@demolink.org">mail(at)TasteOfIndiaManali.com</a></p>
+						</div>
+						<div class="clearfix"> </div>
+				      </div> -->
+				</div>
+				<br><br><br><br>
+				
+	  </div>
+	  <div class="clearfix"> </div>
+				
+  </div>
+</div>
+<div><center>
+	<h2><u>WE ARE HERE</u></h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53983.95799780911!2d77.153857969176!3d32.258152860618964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ab396486c45aed0!2sTaste+of+India!5e0!3m2!1sen!2sin!4v1528455614070" width="450" height="450" frameborder="2" style="border:1" allowfullscreen></iframe>
+<div class="box_3">
+	<hr><br><br>
+</div> </div>
+<!--<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+</div> -->
+<div class="footer">
+	<div class="container">
+	    <div class="col-md-6 col_2">
+		  <ul><li><h5>Location:</h5><p>Taste Of India <span> 1.5 km far from Mall Road,</span></p><p>Near Indian Oil Pump, Vashishth Chowk <span>Manali</span></p></li>
+		   
+		    <li><h5>Phone &amp; Mail</h5><p>Mobile&#128241;<span>+91 - 9736644322</span></p><p>Email:<br><span><a href="mailto:tasteofindiamanali@gmail.com">tasteofindiamanali@gmail.com</a></span></p></li>
+		  </ul>
+		  
+		</div>
+		<div class="col-md-6 col_3">
+		  <div class="col_3">
+		  <ul class="menu">
+           <li><a href="index.html">Home</a></li>| 
+            <li><a href="menu.html" onclick="Menu()">Menu</a></li>|
+            <li><a href="about.html">About</a></li> |
+            <li><a href="services.html">Services</a></li> |
+         
+            <li><a href="contact.html">Contact</a></li>
+		  </ul>
+		 
+         </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+</p></font><hr><center><h5><u>Copyright© 2018 Taste Of India Manali (Unit of High Adventure). All Rights Reserved.</u></h5>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>		

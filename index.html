@@ -1,0 +1,617 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116582981-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116582981-3');
+    </script>
+    <style>
+        marquee {
+            display: inline-block;
+            width: -webkit-fill-available;
+            padding: 2%;
+            color: orange;
+            font-size: 1.3em;
+            background-color: rgb(0, 0, 0, 0.33);
+
+        }
+
+        .dropbtn {
+
+            padding: 14px;
+            font-size: 14px;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .bar1change {
+            transform: rotate(-45deg) translate(-5px, 6px) scale(1.2);
+            transition: 0.4s;
+        }
+
+        .bar2change {
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .bar3change {
+            transform: rotate(45deg) translate(-2px, -4px) scale(1.2);
+            transition: 0.4s;
+        }
+
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        sessionStorage.setItem("contactformdrop", 0);
+
+        function contactForm() {
+            window.location.href = "contact.html";
+            sessionStorage.setItem("contactformdrop", 1);
+
+        }
+
+        function Menu() {
+            sessionStorage.setItem("Click", "Menu");
+        }
+
+        function TandooriSnacks() {
+            sessionStorage.setItem("Click", "TandooriSnacks");
+        }
+
+        function Indian() {
+            sessionStorage.setItem("Click", "Indian");
+        }
+
+        function SouthIndian() {
+            sessionStorage.setItem("Click", "SouthIndian");
+        }
+
+        function Chinese() {
+            sessionStorage.setItem("Click", "Chinese");
+        }
+
+        function Italian() {
+            sessionStorage.setItem("Click", "Italian");
+        }
+
+        function Continental() {
+            sessionStorage.setItem("Click", "Continental");
+        }
+
+        function Bakery() {
+            sessionStorage.setItem("Click", "Bakery");
+        }
+
+        function WoodFirePizza() {
+            sessionStorage.setItem("Click", "WoodFirePizza");
+        }
+
+        $(document).ready(function () {
+
+
+            $("#barcombo").click(function () {
+                $("#bar1").toggleClass("bar1change");
+                $("#bar2").toggleClass("bar2change");
+                $("#bar3").toggleClass("bar3change");
+            });
+
+
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <link rel="icon" href="images/fev.jpeg" type="image/png">
+    <title>Taste Of India Manali | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Pizza,Woodfirepizza,Food,Dinner"/>
+
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all"> <!--footer icons css-->
+
+
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+
+    <!-- Custom Theme files -->
+</head>
+<body>
+
+<div>
+
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 5">
+        <a href="https://wa.me/9736644322" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path opacity="1" fill="#35c03e" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+        </a>
+    </div>
+
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 5">
+        <a href="tel:9736644322">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#11ff00" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+        </a>
+    </div>
+
+<!--banner-->
+<div class="banner">
+    <!--header-->
+    <div class="headder">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" id="barcombo">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar" id="bar1"></span>
+                            <span class="icon-bar" id="bar2"></span>
+                            <span class="icon-bar" id="bar3"></span>
+                        </button>
+                        <div><a class="navbar-brand" href="index.html"> <img src="Pic/logo.png"
+                                                                             style="border-radius: 10%"> </a></div>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="menu.html" onclick="Menu()">Menu</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                        <br>
+
+                        <ul>
+                    </div>
+                    <br>
+                    <center>
+                        <font color="white" font face="Century Gothic"><p><b><u>CONTACT</u> -&nbsp&nbsp <u>+91-9736644322
+                            +91-9816054322</u></b></p></font></h2></center>
+                    <div align="center">
+                        <h2><font color="white" font face="Comic Sans MS"><img src="images/toi.png" height="50"
+                                                                               width="50"><i>FREE Home & Hotel
+                            Delivery<img src="images/toi.png" height="50" width="50"><br></font></i><br></h2>
+                            <h2><a href="https://link.zomato.com/xqzv/rshare?id=6275140630563460" target="_blank" style="color: white; padding: .75rem 2.5rem; border: none; cursor: pointer; font-weight: bold; font-size: 1.2rem; background: linear-gradient(to right, #FF416C, #FF4B2B); border-radius: 10px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Order Now</a>
+                            </h2>
+                    </div>
+                    <marquee BEHAVIOR="ALTERNATE"><font face="Comic Sans MS"><b>20% Discount-7pm-11pm & 10% on Home
+                        Delivery</b></font></marquee>
+
+                    <div class="row col-sm-offset-2">
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="snacks" onclick="TandooriSnacks()">Tandoori
+                                Snacks</font></a>
+                        </div>
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="Indian"
+                                                         onclick="Indian()">Indian</font></a>
+                        </div>
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="Chinese"
+                                                         onclick="Chinese()">Chinese</font></a>
+                        </div>
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="SouthIndian"
+                                                         onclick="SouthIndian()">South Indian</font></a>
+                        </div>
+                    </div>
+                    <div class="row col-md-offset-3">
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="Italian"
+                                                         onclick="Italian()">Italian</font></a>
+                        </div>
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="Continental"
+                                                         onclick="Continental()">Continental</font></a>
+                        </div>
+                        <div class="col-sm-2 text-center col-sm-offset-1" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="Bakery"
+                                                         onclick="Bakery()">Bakery</font></a>
+                        </div>
+                        <div class="col-sm-2 text-center" style="margin: 15px;">
+                            <a href="menu.html"><b><font color="white" size="5" id="WoodFirePizza"
+                                                         onclick="WoodFirePizza()">WoodFirePizza</font></a>
+                        </div>
+                    </div>
+
+
+                    <br><br>
+
+
+                    <div class="clearfix">
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+    <!--//header-->
+    <!-- banner-text Slider starts Here -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+
+
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 3
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <!--//End-slider-script -->
+    <div class="banner-title">
+        <div id="top" class="callbacks_container">
+            <div class="container">
+                <ul class="rslides" id="slider3">
+                    <li>
+                        <div class="slide_text">
+                            <h3 class="head_1">Welcome</h3>
+                            <h3 class="head_2">to the</h3>
+                            <h3 class="head_3">TASTE OF INDIA</h3>
+                            <h3 class="head_4">MANALI</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide_text">
+                            <h1>CIAO</h1>
+                            <!--<a class="hvr-bounce-to-top btn_1" onclick="contactForm()" >&#128241; Order now &#9990;</a>-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide_text">
+                            <h1>BONJOUR</h1>
+                            <!--<a class="hvr-bounce-to-top btn_1" onclick="contactForm()">&#128241; Order now &#9990;</a>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//banner-->
+<div class="grid_1">
+    <div class="col-md-6 image-container1">
+        <img src="Pic\toi7.jpeg" class="img-responsive" alt=""/>
+    </div>
+    <div class="col-md-6 content-wrap1">
+        <h2>Wood Fire Pizza Place</h2>
+        <p>Here You Can Enjoy Wood Fire Pizza Range, we provide you fresh Wood fire Oven Baked pizzas ranges. With full
+            of good quality ingredients, Mozzarella cheese perfect combinations of these stuff to serve you a delicious
+            pizza. We serve best pizza in Manali, A live stage Oven pizzas,For Pizza Lovers.</p>
+
+        <!--<p>It is a quirky, chic, modern Indian café, where guests enjoy a sensory experience through the finest modern Indian and Global cuisine, with a high energy ambiance. Infusing delights of the Bollywood tadka on the top we present Indian, Italian & Chinese cuisine where culinary art meets the alchemy of modern presentations and cooking techniques...</p>-->
+
+    </div><!-- /.col-md-6 -->
+    <div class="clearfix"></div>
+</div>
+<div class="grid_2">
+    <div class="col-md-6 content-wrap">
+        <h2>Fresh Trout Fish & Chicken</h2>
+        <p>We serve you fresh Trout fish Dishes in our Taste of India Restaurant that gives you mouthwatering experience
+            of Non-vegetarian Food. Trout fish is one of the famous Non-veg dish in Manali and we serve you with great
+            taste and best food experience in our Taste of India Restaurant.</p>
+
+    </div><!-- /.col-md-6 -->
+    <br><br><br>
+    <div class="col-md-6 image-container">
+        <img src="Pic\toi5.jpeg" class="img-responsive" alt=""/>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div id="owl-demo3" class="owl-carousel owl-carousel2">
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi.jpeg" class="swipebox" title="Taste of India Manali">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="tasteofindia"/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi7.jpeg" alt="TOI">
+        <a href="Pic\toi7.jpeg" class="swipebox" title="pizza">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt=""/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi2.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi2.jpeg" class="swipebox" title="Road Side View">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="tasteofindia"/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi8.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi8.jpeg" class="swipebox" title="Pizza">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="Pizza"/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi11.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi11.jpeg" class="swipebox" title="Entrance">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="Entrance"/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi4.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi4.jpeg" class="swipebox" title="Trout Fish">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt=""/></h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi10.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi10.jpeg" class="swipebox" title="Restaurant view">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="Restaurant view"/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi3.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi3.jpeg" class="swipebox" title="meal">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="Meal"/></h3>
+            </div>
+        </a>
+    </div>
+    <div class="item">
+        <img class="lazyOwl" data-src="Pic\toi12.jpeg" alt="Lazy Owl Image">
+        <a href="Pic\toi12.jpeg" class="swipebox" title="Path ways">
+            <div class="portfolio_head">
+                <h3><img src="images/link.png" alt="Path ways"/></h3>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="clearfix"></div>
+</div>
+
+<div class="menu" id="Start">
+        <br><br>
+        <center>
+            Download Restaurant Menu Here<br>
+            <h5>(click the download button)</h5>
+            <a href="pdf\toi.pdf" target="_blank"><font face="Comic Sans MS" color="red"><img src="images\dow.gif"
+                                                                                              height="170" width="200"></font></a>
+        </center>
+        <center>
+            <a href="https://link.zomato.com/xqzv/rshare?id=6275140630563460" target="_blank" style="color: white; padding: .75rem 2.5rem; border: none; cursor: pointer; font-weight: bold; font-size: 1.2rem; background: linear-gradient(to right, #FF416C, #FF4B2B); border-radius: 10px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Order Now</a>
+        </center>
+</div>
+
+
+<div class="testimonial">
+    <div class="container">
+        <h3>Want to know us More..</h3>
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">About Us</font></u></b>
+                    <small class="testi-meta"><span class="user">A Famous Restaurant in Manali that gives you Bollywood theme concept surroundings, where you can enjoy indoor and outdoor sitting with full of entertainment and Beautiful views of high mountains with great taste.</span>
+
+                    </small>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">Services</font></u></b>
+                    <small class="testi-meta"><span class="user">We are the best Restaurant in Manali, Provide you best food Manali, We have Indian, Chinese, Italian, South Indian and we have specialty in Pizzas, Wood Fire Oven Pizza, where you can enjoy Fresh live baked pizza, Best pizza in Manali at our Restaurant Taste of India Restaurant. Best food In Manali Town at luxuries place with outdoor and indoor sitting where you can enjoy great taste food.</span>
+
+                    </small>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">Contact Us</font></u></b>
+                    <small class="testi-meta"><span class="user">We're located in the Solang Valley Road, in the lap of beautiful Manali Town, Himachal Pradesh. Near Vashist Chowk. We are here <a
+                            href="https://goo.gl/maps/5tojBiwSxqS2"><u>LOCATION</u></a> Taste Of India Restaurant, Manali. A best destination for food lovers in Manali.</span>
+
+                    </small>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="testi-item">
+                <blockquote class="testi-item_blockquote">
+                    <b><u><font color="black">Social Presence</font></u></b>
+                    <br></br>
+                    <a href="https://www.facebook.com/yourtasteofindia/" target="_blank"><img src="social/facebook.png"></a>
+                    <a href="https://www.instagram.com/tasteofindiamanalii/" target="_blank"><img
+                            src="social/instagram.png"></a>
+                    <a href=""><img src="social/twitter.png" target="_blank"></a>
+                    <a href="https://plus.google.com/u/2/106147208585432789191" target="_blank"><img
+                            src="social/google-plus.png"></a>
+                    <a href="mailto:tasteofindiamanali@gmail.com"><img src="social/gmail.png"></a>
+
+
+                    <br>
+                    <div class="clearfix"></div>
+                </blockquote>
+            </div>
+        </div>
+
+    <div class="clearfix"></div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="col-md-6 col_2">
+            <ul>
+                <li><h5>Location:</h5>
+                    <p>Taste Of India Restaurat<span> Near Mall Road,</span></p>
+                    <p>Near Indian Oil Pump,Solang Valley Road, Vashishth Chowk <span>Manali</span></p></li>
+                <li><h5>Phone &amp; Mail</h5>
+                    <p>Mobile&#128241;<span>+91 - 9736644322</span></p>
+                    <p>Email-:&nbsp<span><a href="mailto:tasteofindiamanali@gmail.com"> tasteofindiamanali@gmail.com</a></span>
+                    </p></li>
+            </ul>
+            </ul>
+        </div>
+        <div class="col-md-6 col_3">
+            <div class="col_3">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    |
+                    <li><a href="menu.html" onclick="Menu()">Menu</a></li>
+                    |
+                    <li><a href="about.html">About</a></li>
+                    |
+                    <li><a href="services.html">Services</a></li>
+                    |
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>
+            </div>
+        </div>
+                <div class="testi-item">
+                    <blockquote class="testi-item_blockquote">
+                        <br></br>
+                        <a href="https://www.facebook.com/yourtasteofindia/" target="_blank"><img src="social/facebook.png"></a>
+                        <a href="https://www.instagram.com/tasteofindiamanalii/" target="_blank"><img
+                                src="social/instagram.png"></a>
+                        <a href=""><img src="social/twitter.png" target="_blank"></a>
+                        <a href="https://plus.google.com/u/2/106147208585432789191" target="_blank"><img
+                                src="social/google-plus.png"></a>
+                        <a href="mailto:tasteofindiamanali@gmail.com"><img src="social/gmail.png"></a>
+
+
+                        <br>
+                        <div class="clearfix"></div>
+                    </blockquote>
+                </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+</p></font>
+<hr>
+<center><h5><u>Copyright© 2018 Taste Of India Manali (Unit of High Adventure). All Rights Reserved.</u></h5>
+    <script src="js/bootstrap.min.js"></script>
+    <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            0
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!------ Eng Light Box ------>
+    <!-- Prettify -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo3").owlCarousel({
+                items: 6,
+                lazyLoad: true,
+                autoPlay: true,
+                navigation: false,
+                pagination: false,
+            });
+        });
+    </script>
+
+</center>
+</div>
+
+</body>
+</html>		
